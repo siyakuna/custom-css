@@ -1,0 +1,23 @@
+display:none; }
+li{ position:fixed;top:15px;left:0;right:0;width:100%; }
+/*通常立ち絵の設定*/
+img {
+  content: var(--iconurl);
+  height:auto !important;
+  width:100% !important;
+  border-radius:0 !important;
+  position:absolute;
+}
+/*話してる最中の立ち絵の設定*/
+img[class*="Voice_avatarSpeaking"]{
+     border-color:rgba(0,0,0,0) !important;
+     animation: speak-jump 1s infinite;
+ }
+  @keyframes speak-jump {
+ 0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  }
