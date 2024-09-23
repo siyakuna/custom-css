@@ -1,7 +1,7 @@
 li{ position:fixed;top:15px;left:0;right:0;width:100%; }
 /*通常立ち絵の設定*/
 img {
-  content: var(--iconurl);
+  content: var(--iconurl,img(src));
   height:auto !important;
   width:100% !important;
   border-radius:0 !important;
