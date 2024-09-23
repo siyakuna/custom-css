@@ -5,7 +5,8 @@ img {
   height:auto !important;
   width:100% !important;
   border-radius:0 !important;
-  position:absolute;
+  position:relative;
+  margin-top: 50px;
 }
 /*話してる最中の立ち絵の設定*/
 img[class*="Voice_avatarSpeaking"]{
@@ -14,9 +15,9 @@ img[class*="Voice_avatarSpeaking"]{
  }
   @keyframes speak-jump {
  0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(50px);
+    transform: translateY(-50px);
   }
   }
